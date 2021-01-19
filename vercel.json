@@ -1,0 +1,29 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/zh_TW/things-i-dont-know-as-of-2018",
+      "destination": "/zh-hant/things-i-dont-know-as-of-2018"
+    },
+    {
+      "source": "/not-everything-should-be-a-hook",
+      "destination": "/why-isnt-x-a-hook"
+    },
+    {
+      "source": "/making-setinterval-play-well-with-react-hooks",
+      "destination": "/making-setinterval-declarative-with-react-hooks"
+    }
+  ]
+}
